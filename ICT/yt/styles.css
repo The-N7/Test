@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #333399, #ff00cc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #9b22ffc3, #ff00ccc3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #5e5ec3b7, #ff5adeb7);
+  border-radius: 5px;
+}
+
+.container {
+  width: 75%;
+  min-height: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(-6deg);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.logo {
+  /* margin-right: 3rem; */
+  padding: 0;
+  margin: 0 7rem 0 5rem;
+  width: 20px;
+  height: 30px;
+}
+
+.nav-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-lists li {
+  float: left;
+}
+.nav-lists li a {
+  margin: 0 15px;
+}
+
+li a {
+  /* display: block; */
+  color: black;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+  vertical-align: middle;
+}
+
+li a:hover {
+  color: lavender;
+}
+
+hr {
+  border: 1px double blue;
+  margin-bottom: 25px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.side-bar ul {
+  font-size: 1.05rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.side-bar {
+  height: 300px;
+  width: 16%;
+  text-align: center;
+  /* background-color: #b835f9c7; */
+  background-image: linear-gradient(to bottom right, #ff00cca3, #333399a3);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.main-part {
+  width: 80%;
+  border: 1px double blue;
+  border-radius: 15px;
+  padding: 10px;
+  background: linear-gradient(
+    115deg,
+    #4fcf6f3d,
+    #fad6483d,
+    #a667e53d,
+    #12bcfe3d,
+    #44ce7b3d
+  );
+  /* background-size: 50% 100%; */
+}
+
+/* .main-part p {
+  background: -webkit-linear-gradient(#333399, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
